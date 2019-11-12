@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         x = self.driver.title
         print(x)
 
-        self.assertEqual(x,"Muhammad Anas Ansari - Google arch")
+        self.assertEqual(x,"Muhammad Anas Ansari - Google Search")
 
 
 
