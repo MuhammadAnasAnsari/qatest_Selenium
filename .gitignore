@@ -1,4 +1,4 @@
 ﻿*.pyc
 Selenium/venv/
 *.exe
-venv/
+Selenium/venv/

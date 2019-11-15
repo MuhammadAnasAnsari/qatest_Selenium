@@ -1,12 +1,13 @@
 import time
 import unittest
 from selenium import webdriver
+from Selenium.POMDemo.Pages.loginpage import LoginPage
+from Selenium.POMDemo.Pages.homepage import HomePage
 import sys  # Import os,sys classes and " sys.path.append(os.path.join(os.path.dirname(__file__),"..","..")) "
 import os  # to run the POM project from command line
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
-from Selenium.POMDemo.Pages.loginpage import LoginPage
-from Selenium.POMDemo.Pages.homepage import HomePage
+
 import HtmlTestRunner
 
 
@@ -20,7 +21,7 @@ class logintest(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path="E:/repos/qatest/Selenium/drivers/chromedriver.exe")
         # cls.driver=webdriver.Chrome(ChromeDriverManager().install())
         cls.driver.maximize_window()
-        cls.driver.set_page_load_timeout(10)
+        cls.driver.set_page_load_timeout(50)
 
     def test_SS_Devlogin_valid(self):
         # Login to Dev Panel of Shahi Sawari
@@ -55,7 +56,7 @@ class logintest(unittest.TestCase):
         # self.driver.implicitly_wait(10)
         # self.driver.find_element_by_xpath("//button[@class='btn btn-block btn-primary mt-lg login-btn']").click()
         # time.sleep(5)
-        # print("You Logged in Successfull!")
+        # print("You Logged in Successfully!")
 
         # Logout to the Dev Panel of Shahi Sawari
         # self.driver.find_element_by_xpath("//span[contains(text(),'Administrator')]").click()

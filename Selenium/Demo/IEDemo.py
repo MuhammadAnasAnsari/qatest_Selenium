@@ -16,10 +16,10 @@ time.sleep(2)
 print(driver.title)
 driver.implicitly_wait(5)
 driver.find_element_by_name("q").send_keys("Automation step by step")
-driver.implicitly_wait(2)
+# driver.implicitly_wait(5)
 #Search button is overlapping with the search list thats why we import Keys class and hit the button.
 driver.find_element_by_name("btnK").send_keys(Keys.ENTER)
-driver.implicitly_wait(2)
+driver.implicitly_wait(4)
 print(driver.title)
 
 driver.close()
