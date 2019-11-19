@@ -1,10 +1,13 @@
 import time
 import unittest
 from selenium import webdriver
-from Selenium.POMDemo.Pages.loginpage import LoginPage
-from Selenium.POMDemo.Pages.homepage import HomePage
+
+
 import sys  # Import os,sys classes and " sys.path.append(os.path.join(os.path.dirname(__file__),"..","..")) "
 import os  # to run the POM project from command line
+
+from Selenium.POMDemo.Pages.homepage import HomePage
+from Selenium.POMDemo.Pages.loginpage import LoginPage
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 

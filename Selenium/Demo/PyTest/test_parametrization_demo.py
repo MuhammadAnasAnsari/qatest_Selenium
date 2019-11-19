@@ -28,7 +28,7 @@ def sum(a, b):
                          [
                              (3, 5, 8),
                              (5, 6, 11),
-                             (9, 9, 20)
+                             (9, 9, 18)
                          ]
                          )
 def test_calc_sum_1(input1, input2, output):

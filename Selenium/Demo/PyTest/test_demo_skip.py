@@ -21,6 +21,8 @@ def test_mac_1():
 @pytest.mark.mac
 def test_mac_2():
     assert True
+
+
 # @pytest.mark.skip(reason="Not included in this build!")
 # def test_demo_1():
 #     assert True

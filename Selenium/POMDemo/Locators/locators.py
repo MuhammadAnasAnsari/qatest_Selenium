@@ -1,7 +1,4 @@
-
-
 class Locators():
-
     # login Page locators
     email_textbox_id = "exampleInputEmail1"
     password_textbox_id = "exampleInputPassword1"
