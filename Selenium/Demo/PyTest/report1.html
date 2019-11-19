@@ -1,0 +1,40 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.0, pytest-5.2.3, py-1.8.0, pluggy-0.13.0
+rootdir: E:\repos\qatest\Selenium\Demo\PyTest
+plugins: html-2.0.0, metadata-1.8.0
+collected 8 items
+
+test_demo_skip.py ....                                                   [ 50%]
+test_parametrization_demo.py ..F                                         [ 87%]
+test_sample.py .                                                         [100%]
+
+================================== FAILURES ===================================
+___________________________ test_calc_sum_1[9-9-20] ___________________________
+
+input1 = 9, input2 = 9, output = 20
+
+    @pytest.mark.parametrize("input1, input2, output",
+        [
+            (3,5,8),
+            (5,6,11),
+            (9,9,20)
+        ]
+    )
+    def test_calc_sum_1(input1, input2, output):
+        result = sum(input1, input2)
+>       assert result == output
+E       assert 18 == 20
+
+test_parametrization_demo.py:25: AssertionError
+============================== warnings summary ===============================
+c:\users\flo-datascience\appdata\local\programs\python\python38-32\lib\site-packages\_pytest\mark\structures.py:321
+  c:\users\flo-datascience\appdata\local\programs\python\python38-32\lib\site-packages\_pytest\mark\structures.py:321: PytestUnknownMarkWarning: Unknown pytest.mark.windows - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    warnings.warn(
+
+c:\users\flo-datascience\appdata\local\programs\python\python38-32\lib\site-packages\_pytest\mark\structures.py:321
+  c:\users\flo-datascience\appdata\local\programs\python\python38-32\lib\site-packages\_pytest\mark\structures.py:321: PytestUnknownMarkWarning: Unknown pytest.mark.mac - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+-- generated html file: file://E:\repos\qatest\Selenium\Demo\PyTest\reports ---
+================== 1 failed, 7 passed, 2 warnings in 20.34s ===================
